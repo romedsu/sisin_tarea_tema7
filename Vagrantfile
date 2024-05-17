@@ -27,15 +27,7 @@ Vagrant.configure("2") do |config|
       #4 | Instalamos API de tipo RESTful
       sudo apt-get install php7.0-fpm
 
-      sudo sed -i 's|root /var/www/html;|root /tarea_t7_rodrigo;|' /etc/nginx/sites-enabled/default
-
-      sudo sed -i '/root \/tarea_t7_rodrigo;/a \
-    location \/backend\/ { \
-           include fastcgi_params; \
-           fastcgi_param REQUEST_METHOD $request_method; \
-           fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; \
-           fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; \
-        }' /etc/nginx/sites-enabled/default
+      
 
       sudo systemctl restart nginx
 
