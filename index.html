@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Web - Horario</title>
+    <link rel="stylesheet" href="frontend/css/app.css">
+</head>
+
+<body>
+
+    <h1>Práctica SISIN - Tema 7</h1>
+
+    
+
+    
+    <script>
+
+        const urlObtenerHorario = ''
+
+        // Llamar a la función obtenerHorario para cargar la lista de Módulos Profesionales al cargar la página web
+        obtenerHorario()
+
+        // Función asíncrona para obtener la lista de empleados
+        async function obtenerHorario() {
+            try {
+                // Obtener la lista de empleados del backend
+                const horario = await fetch(urlObtenerHorario)
+                    .then(respuesta => respuesta.json());
+
+                // Renderizar el horario aquí...
+                
+            } catch (error) {
+                console.log(error);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
