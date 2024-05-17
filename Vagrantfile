@@ -24,7 +24,7 @@ Vagrant.configure("2") do |config|
       #3 | Instalamos el driver mysqli para poder conectar mySQL con PHP (-y para confirmar)
       sudo apt install -y php php-mysqli
 
-      #4 | Instalamos API de tipo RESTful
+      #4 | Instalamos API de tipo RESTful 
       sudo apt-get install php7.0-fpm
 
       
