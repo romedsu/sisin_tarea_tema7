@@ -28,7 +28,6 @@ Vagrant.configure("2") do |config|
       sudo apt-get install php7.0-fpm
 
       
-
       sudo systemctl restart nginx
 
       echo "-- Insercción BBDD tarea SISIN Tema 7" > /vagrant/datos_tarea.sql
