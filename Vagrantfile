@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
       #1 | Instalamos mySQL en Ubuntu
       sudo apt install mysql-server
 
-      #2 | Instalamos  el servidor web nginx en Ubuntu (-y para confirmar) 
+      #2 | Instalamos  el servidor web nginx en Ubuntu (-y para confirmar)  
       sudo apt install -y nginx
 
       #3 | Instalamos el driver mysqli para poder conectar mySQL con PHP (-y para confirmar)
