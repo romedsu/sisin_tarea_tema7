@@ -21,14 +21,14 @@ Vagrant.configure("2") do |config|
       #2 | Instalamos  el servidor web nginx en Ubuntu (-y para confirmar)  
       sudo apt install -y nginx
 
-      #3 | Instalamos el driver mysqli para poder conectar mySQL con PHP (-y para confirmar)
+      #3 | Instalamos el driver mysqli para poder conectar mySQL con PHP (-y para confirmar) 
       sudo apt install -y php php-mysqli
 
       #4 | Instalamos API de tipo RESTful 
       sudo apt-get install php7.0-fpm
 
-      
       sudo systemctl restart nginx
+
 
       echo "-- Insercción BBDD tarea SISIN Tema 7" > /vagrant/datos_tarea.sql
 
