@@ -59,7 +59,7 @@ Vagrant.configure("2") do |config|
       echo "('Raquel','Carril',25,2200.00,'Desarrollo')," >> /vagrant/datos_tarea.sql
       echo "('Teresa','Molina',43,1400.00,'Ventas')," >> /vagrant/datos_tarea.sql
       echo "('Pepe','Couce',55,1350.00,'Ventas');" >> /vagrant/datos_tarea.sql
-
+      
 
       # Instalación de los binarios de PHP, el driver mysqli y la extensión FPM para realizar peticiones de tipo RESTful
      
