@@ -34,9 +34,9 @@ Vagrant.configure("2") do |config|
       #6 | Creamos archivo .sql con toda la creación de la BBDD, y cada nueva instrucción la redireccionamos al archivo .sql
       echo "-- Insercción BBDD tarea SISIN Tema 7" > /home/vagrant/datos_tarea.sql
 
-      echo "create database bbdd_tarea;" >> /home/vagrant/datos_tarea.sql
+      echo "create database gestion_modulos_profesionales;" >> /home/vagrant/datos_tarea.sql
 
-      echo "use bbdd_tarea;" >> /home/vagrant/datos_tarea.sql
+      echo "use gestion_modulos_profesionales;" >> /home/vagrant/datos_tarea.sql
 
       echo "create table empleados(
         idEmpleado int auto_increment  primary key,

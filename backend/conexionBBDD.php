@@ -25,7 +25,7 @@ if ($conn->connect_error) {
 }
 
 // Consulta SQL para obtener los datos de la tabla módulos
-$sql = "SELECT * FROM modulos";
+$sql = "SELECT * FROM empleados";
 
 // Ejecutar la consulta SQL
 $resultado = $conn->query($sql);

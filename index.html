@@ -11,13 +11,31 @@
 <body>
 
     <h1>Práctica SISIN - Tema 7</h1>
+    
+    <table>
+        <thead>
+            <tr class="tablaEncabezado">
+                <th>idEmpleado</th>
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>edad</th>
+                <th>salario</th>
+                <th>departamento</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Aquí se agregarán las filas de la tabla -->
+        </tbody>
+
+    </table>
 
     
 
     
     <script>
 
-        const urlObtenerHorario = ''
+        const urlObtenerHorario = '/backend/conexionBBDD.php'
 
         // Llamar a la función obtenerHorario para cargar la lista de Módulos Profesionales al cargar la página web
         obtenerHorario()
@@ -30,12 +48,46 @@
                     .then(respuesta => respuesta.json());
 
                 // Renderizar el horario aquí...
+                renderizarEmpleados(horario);
                 
             } catch (error) {
                 console.log(error);
             }
 
         }
+        function renderizarEmpleados(empleados) {
+        const tablaEmpleados = document.querySelector('table');
+
+        // Limpiar contenido existente de la tabla
+        tablaEmpleados.innerHTML = '';
+
+        // Crear fila de encabezados
+        const encabezados = document.createElement('tr');
+        encabezados.innerHTML = `
+            <th>idEmpleado</th>
+            <th>nombre</th>
+            <th>apellido</th>
+            <th>edad</th>
+            <th>salario</th>
+            <th>departamento</th>
+        `;
+        tablaEmpleados.appendChild(encabezados);
+
+        // Crear filas de empleados
+        empleados.forEach(empleado => {
+            const filaEmpleado = document.createElement('tr');
+            filaEmpleado.innerHTML = `
+                <td>${empleado.idEmpleado}</td>
+                <td>${empleado.nombre}</td>
+                <td>${empleado.apellido}</td>
+                <td>${empleado.edad}</td>
+                <td>${empleado.salario}</td>
+                <td>${empleado.departamento}</td>
+            `;
+            tablaEmpleados.appendChild(filaEmpleado);
+        });
+    }
+
 
     </script>
 
