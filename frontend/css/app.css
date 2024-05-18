@@ -5,10 +5,13 @@
 table {
     margin: auto;
 }
-th, td{
-    width: 100px;
+ 
+table tr th, table tr td {
+    width: 75px;
+    padding: 10px;
+    text-align: left;
 }
 
-.primeraFila {
-    background-color: blueviolet;
-}
+table tr:nth-child(2)  {
+    background-color: rgb(224, 224, 224);
+  }
