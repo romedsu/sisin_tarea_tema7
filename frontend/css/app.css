@@ -1,9 +1,14 @@
-h1 {
-    text-align: center;
+.titulo {
+    text-align: center; 
 }
 
-
-.tablaEncabezado {
+table {
     margin: auto;
-    background-color: blue;
+}
+th, td{
+    width: 100px;
+}
+
+.primeraFila {
+    background-color: blueviolet;
 }
