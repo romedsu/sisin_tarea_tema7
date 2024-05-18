@@ -4,6 +4,7 @@
 
 table {
     margin: auto;
+    border-collapse: collapse;
 }
  
 table tr th, table tr td {
