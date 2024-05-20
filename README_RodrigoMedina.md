@@ -77,7 +77,8 @@
 
 ### 3.2 | Configuración de conexionBBDD.php --> **(/backend)**
 
-### 3.3 | Configuración de JavaScript (script en index.html)
+### 3.3 | Configuración de JavaScript (script en index.html) 
+ const urlObtenerHorario = 'http://192.168.55.106/backend/conexionBBDD.php'
 
 ### 3.4 | Configuración CSS --> **(/fronted/css)**
 
